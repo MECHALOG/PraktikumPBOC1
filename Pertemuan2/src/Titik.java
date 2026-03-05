@@ -115,4 +115,8 @@ public class Titik {
     void printCounterTitik(){
         System.out.println(this.counterTitik);
     }
+
+    public double getJarak(Titik T2){
+        return Math.sqrt(Math.pow((absis-T2.getAbsis()), 2.0) + Math.pow((ordinat-T2.getOrdinat()), 2.0));
+    }
 }
